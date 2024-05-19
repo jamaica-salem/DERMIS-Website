@@ -1,34 +1,13 @@
-#first-section {
-    height: 100vh; /* Set a height for the first section */
-    position: relative;
+.image-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center; /* Align items vertically at the center */
+    width: 100%; /* Optionally, set width to ensure it takes the full width of its parent */
+    height: 400px; /* Set the desired height */
+    overflow: hidden; /* Hide any parts of the image that exceed the container */
 }
-#first-section h1,
-#first-section p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    color: whitesmoke;
-    font-family: 'Libre Baskerville', serif;
-}
-#first-section h1 {
-    font-size: 8.6vw;
-    white-space: nowrap;
-}
-#first-section p {
-    top: calc(50% + 10vw); /* Adjust the top position */
-    font-family: 'Raleway', serif;
-    font-size: 1.6vw;
-    white-space: nowrap;
-}
-.grid-cols-2 {
-    height: 100%;
-}
-.bg-blue-700 {
-    background-color: blue;
-}
-.bg-image {
-    background-size: cover;
-    background-position: center;
+
+.image-container img {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%; /* Ensure the image does not exceed the container's height */
 }

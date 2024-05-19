@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="Dermatology, Clinic, Skin, Beauty">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>HOME</title>
 </head>
+
 <body>
     <script src="/scripts/nav-bar.js"></script>
     <div id="nav-bar"></div>
@@ -17,7 +19,7 @@
         <p style="position: absolute; top: calc(58% + 10vw); left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Raleway', serif; color: whitesmoke; font-size: 1.5vw; white-space: nowrap;">MEDICAL DERMATOLOGY | DERMATOPATHOLOGY | LASERS | AESTHETIC CLINIC</p>
         <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
             <!-- Left Column -->
-            <div class="bg-blue-700">
+            <div style="background-color: #B1D3CA;">
             </div>
             <!-- Right Column-->
             <div class="bg-image" style="background-image: url('/assets/1.jpg'); background-size: cover; background-position: center;">
@@ -26,10 +28,12 @@
     </div>
     <div id="second-section" style="position: relative; height: 100vh; margin-top: 8rem; margin-bottom: 5rem;">
         <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
+            <!-- Left Column-->
             <div>
-                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb;">About Us</h1>
-                <p style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw;">Hi, Welcome!</p>
+                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #83AEA2;">About Us</h1>
+                <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw;">Hi, Welcome!</h2>
             </div>
+            <!-- Right Column -->
             <div>
                 <p style="font-family: Raleway; margin-right: 15vb; font-size: 1.2vw;">At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.
                 </p>
@@ -45,8 +49,55 @@
         </div>
     </div>
     <hr>
-    <div id="third-section">
-        <h1>helo</h1>
+    <div id="third-section"  style="position: relative; height: 100vh; margin-top: 8rem; margin-bottom: 5rem;">
+        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.5vw; color: #83AEA2;">Meet Our Dermatologists</h1>
+        <h2 style="font-family: Raleway; font-size: 4.0vw; text-align: center;">We'll take care of your skin!</h2>
+        <div class="grid grid-cols-4 mt-20" style="grid-template-rows: 100vh 50vh;" style="margin-top: 8rem; margin-bottom: 5rem;">
+            <div>   
+                <div class="image-container" >
+                    <img src="/assets/derm.jpg" alt="Your Image">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag,<br>MD, DPDS</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Board-Certified Dermatologist</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
+                </div>
+            </div>
+            <div>
+                <div class="image-container" >
+                    <img src="/assets/derm.jpg" alt="Your Image">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Kara Melissa Torres-Culala,<br>MD, FPDS, FDSP</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Board-Certified Dermatologist and Dermatopathologist</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Monday, Tuesday & Saturday</h4>
+                </div>
+            </div>
+            <div>
+                <div class="image-container" >
+                    <img src="/assets/derm.jpg" alt="Your Image">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Andre Paolo Espiritu,<br>MD, FPCS, FPAPRAS</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Plastic, Reconstructive, and Aesthetic Surgeon</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">By appointment</h4>
+                </div>
+            </div>
+            <div>
+                <div class="image-container" >
+                    <img src="/assets/derm.jpg" alt="Your Image">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag, <br> MD, DPDS</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;" >Board-Certified Dermatologist</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
