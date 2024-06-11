@@ -11,19 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Dermatology International Subspecialists</title>
+    <!-- <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 100vh 50vh;
+        }
+        .bg-image {
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+        }
+    </style> -->
 </head>
 <body>
     <script src="/scripts/nav-bar.js"></script>
     <div id="nav-bar"></div>
     <div id="first-section" style="position: relative; height: 100vh;">
-        <h1 style="position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Libre Baskerville', serif; color: whitesmoke; font-size: 8.0vw; line-height: 1.2;">Dermatology International Subspecialists</h1>
-        <p style="position: absolute; top: calc(66% + 10vw); left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Raleway', serif; color: whitesmoke; font-size: 1.5vw; white-space: nowrap;">MEDICAL DERMATOLOGY | DERMATOPATHOLOGY | LASERS | AESTHETIC CLINIC</p>
+        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Libre Baskerville', serif; color: whitesmoke; font-size: 8.0vw; line-height: 1.2; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);">Dermatology International Subspecialists</h1>
+        <p style="position: absolute; top: calc(64% + 10vw); left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Raleway', serif; color: whitesmoke; font-size: 1.5vw; white-space: nowrap; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">MEDICAL DERMATOLOGY | DERMATOPATHOLOGY | LASERS | AESTHETIC CLINIC</p>
         <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
             <!-- Left Column -->
-            <div style="background-color: #B1D3CA;">
+            <div style="background-color: #B39881;">
             </div>
             <!-- Right Column-->
-            <div class="bg-image" style="background-image: url('/assets/1.jpg'); background-size: cover; background-position: center;">
+            <div id="slideshow" class="bg-image" style="background-image: url('/assets/main.jpg');">
             </div>
         </div>
     </div>
@@ -31,7 +42,7 @@
         <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
             <!-- Left Column-->
             <div>
-                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #83AEA2;">About Us</h1>
+                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #A28167;">About Us</h1>
                 <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw;">Hi, Welcome!</h2>
             </div>
             <!-- Right Column -->
@@ -51,101 +62,91 @@
     </div>
     <hr>
     <div id="third-section"  style="position: relative; height: 128vh; margin-top: 8rem; margin-bottom: 5rem;">
-        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.5vw; color: #83AEA2;">Meet Our Dermatologists</h1>
+        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.5vw; color: #A28167;">Meet Our Doctors</h1>
         <h2 style="font-family: Raleway; font-size: 4.0vw; text-align: center;">We'll take care of your skin!</h2>
-        <div class="grid grid-cols-4 mt-20" style="grid-template-rows: 100vh 50vh;" style="margin-top: 8rem; margin-bottom: 3rem;">
-            <div>   
-                <div class="image-container" >
-                    <img src="/assets/derm.jpg" alt="">
-                </div>
-                <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag,<br>MD, DPDS</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Board-Certified Dermatologist</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
-                </div>
-            </div>
-            <div>
-                <div class="image-container" >
-                    <img src="/assets/derm.jpg">
-                </div>
-                <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Kara Melissa Torres-Culala,<br>MD, FPDS, FDSP</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Board-Certified Dermatologist and Dermatopathologist</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Monday, Tuesday & Saturday</h4>
-                </div>
-            </div>
-            <div>
-                <div class="image-container" >
-                    <img src="/assets/derm.jpg">
-                </div>
-                <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Andre Paolo Espiritu,<br>MD, FPCS, FPAPRAS</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;">Plastic, Reconstructive, and Aesthetic Surgeon</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">By appointment</h4>
-                </div>
-            </div>
+        <div class="grid grid-cols-3 mt-20" style="grid-template-rows: 100vh 50vh;" style="margin-top: 8rem; margin-bottom: 3rem;">
             <div>
                 <div class="image-container" >
                     <img src="/assets/derm.jpg">
                 </div>
                 <div class="mt-10">
                     <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag, <br> MD, DPDS</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #3D7868;" >Board-Certified Dermatologist</h2>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;" >Board-Certified Dermatologist</h2>
                     <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
                     <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
                 </div>
             </div>
+            <div>   
+                <div class="image-container" >
+                    <img src="/assets/tayag.JPG" alt="">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag,<br>MD, DPDS</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;">Board-Certified Dermatologist</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
+                </div>
+            </div>
+            <div>
+                <div class="image-container" >
+                    <img src="/assets/torres-culala.JPG">
+                </div>
+                <div class="mt-10">
+                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Kara Melissa Torres-Culala,<br>MD, FPDS, FDSP</h1>
+                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;">Board-Certified Dermatologist and Dermatopathologist</h2>
+                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
+                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Monday, Tuesday & Saturday</h4>
+                </div>
+            </div>
+            
         </div>
     </div>
     <hr>    
     <div id="fourth-section" style="position: relative; height: 133vh; margin-top: 8rem; margin-bottom: 6rem;">
         <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
             <div style="width: 85vh;">
-                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #83AEA2;">Our Services</h1>
-                <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw; line-height: 1.0;">We offer the best services for your skin!</h2>
+                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #A28167;">Our Services</h1>
+                <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw; line-height: 1.0; margin-top: 2vh;">We offer the best services for your skin!</h2>
             </div>
             <div>
                 <div class="grid grid-cols-2" style="margin-right: 15vb;">
                     <div>
-                        <div style="border: #83AEA2; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
-                            <img src="/assets/2.jpg" alt="Your Image">
+                        <div style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
+                            <img src="/assets/011.jpg" alt="Your Image">
                             <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #83AEA2; margin-top: 2vb;" >LIBERTY PEEL</h1>
+                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >LIBERTY PEEL</h1>
                             </div>
                         </div>
-                        <div style="border: #83AEA2; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
-                            <img src="/assets/2.jpg" alt="Your Image">
+                        <div style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
+                            <img src="/assets/055.jpg" alt="Your Image">
                             <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #83AEA2; margin-top: 2vb;" >CHRYSLER PEEL</h1>
+                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >CHRYSLER PEEL</h1>
                             </div>
                         </div>
 
                     </div>
                     <div>
-                        <div style="border: #83AEA2; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
-                            <img src="/assets/2.jpg" alt="Your Image">
+                        <div style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
+                            <img src="/assets/022.jpg" alt="Your Image">
                             <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #83AEA2; margin-top: 2vb;" >BROOKLYN PEEL</h1>
+                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >BROOKLYN PEEL</h1>
                             </div>
                         </div>
-                        <div style="border: #83AEA2; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
-                            <img src="/assets/2.jpg" alt="Your Image">
+                        <div style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
+                            <img src="/assets/044.jpg" alt="Your Image">
                             <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #83AEA2; margin-top: 2vb;" >EMPIRE STATE PEEL</h1>
+                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >EMPIRE STATE PEEL</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="services.html">
-                    <button style="font-family: 'Raleway'; border: black; border-style: solid; border-width: thin; margin-top: 5vh; height: 6vh; width: 9vw; font-size: 1.0vw;">More -></button>
+                    <button style="font-family: 'Raleway'; border: black; border-style: solid; border-width: thin; margin-top: 5vh; height: 6vh; width: 9vw; font-size: 1.0vw; color: black">More -></button>
                 </a>
             </div>
         </div>
     </div>
-    <div style="background-color: #83AEA2; height: 12vh; display: flex; align-items: center; z-index: 500;">
+    <div style="background-color: #A28167;   height: 12vh; display: flex; align-items: center; z-index: 500;">
         <a href="reviews.html" style="text-decoration: none; color: whitesmoke; font-family: 'Raleway'; font-size: 2vw; margin-left: 5vw; padding: 0.5em;">Read our real patient reviews -></a>
     </div>
     
@@ -160,7 +161,7 @@
                 <img src="/assets/stars.png" alt="Your Image" style="height: 8vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.5vw;">“I’ve been feeling pretty stressed with my skin lately... Oh my goodness! The experience was AMAZING. My skin felt so soft and moisturized!”</h1>
                 <br>
-                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #3D7868;">- Customer A</h2>
+                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer A</h2>
             </div>
         </div>
         <hr>
@@ -170,31 +171,29 @@
                 <img src="/assets/stars.png" alt="Your Image" style="height: 8vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.5vw;">“Really loved the experience. The staffs were amazing! The dermatologists in DERMIS are the best!!”</h1>
                 <br>
-                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #3D7868;">- Customer B</h2>
+                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer B</h2>
             </div>
             <!-- Right Column-->
             <div style="display: flex; justify-content: center; align-items: center;">
                 <img src="/assets/3.png" alt="Your Image" style="height: 60vh;">
             </div>
         </div>
-        <hr>
+        <!-- <hr>
         <div class="grid grid-cols-2" style="grid-template-rows: 75vh; grid-template-columns: 40% 60%;">
-            <!-- Left Column -->
             <div style="display: flex; justify-content: center; align-items: center;">
                 <img src="/assets/5.png" alt="Your Image" style="height: 60vh;">
             </div>
-            <!-- Right Column-->
             <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                 <img src="/assets/stars.png" alt="Your Image" style="height: 8vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.5vw;">“I’ve been feeling pretty stressed with my skin lately... Oh my goodness! The experience was AMAZING. My skin felt so soft and moisturized!”</h1>
                 <br>
                 <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #3D7868;">- Customer C</h2>
             </div>
-        </div>
+        </div> -->
     </div>
     <hr>
     <div id="gallery-section">
-        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #3D7868; text-align: center; margin-top: 6vw;   ">Our Gallery</h1>
+        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167; text-align: center; margin-top: 6vw;   ">Our Gallery</h1>
         <h2 style="font-family: 'Raleway'; font-size: 2.5vw; text-align: center; ">See the beauty of our clinic.</h2>
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4" style="padding-left: 8vw; padding-right: 8vw; margin-top: 5vw; margin-bottom: 8vw;">
@@ -246,21 +245,21 @@
             </div>
             <div style="border-right: gray; border-width: thin; display: flex; align-items: center; justify-content: center;">
                 <div>
-                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #83AEA2; text-align: center; font-size: 1.2vw;">Opening hours</h1>
+                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167; text-align: center; font-size: 1.2vw;">Opening hours</h1>
                     <h2 style="font-family: 'Raleway'; margin-top: 3vh; text-align: center; font-size: 1.3vw;">Monday to Saturday:</h2>
                     <h2 style="font-family: 'Raleway'; text-align: center;  font-size: 1.3vw;">12:00 PM to 7:00 PM </h2>
                 </div>
             </div>
             <div style="border-right: gray; border-width: thin; display: flex; align-items: center; justify-content: center;">
                 <div>
-                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #83AEA2; text-align: center; font-size: 1.2vw;">Connect with us</h1>
+                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167; text-align: center; font-size: 1.2vw;">Connect with us</h1>
                     <h2 style="font-family: 'Raleway'; margin-top: 3vh; text-align: center; font-size: 1.3vw;">dermatologyisph@gmail.com</h2>
                     <h2 style="font-family: 'Raleway'; text-align: center;  font-size: 1.3vw;">09104228687</h2>
                 </div>
             </div>
             <div style="border-right: gray; border-width: thin; display: flex; align-items: center; justify-content: center;">
                 <div>
-                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #83AEA2; text-align: center; font-size: 1.2vw;">Contact us</h1>
+                    <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167; text-align: center; font-size: 1.2vw;">Contact us</h1>
                     <h2 style="font-family: 'Raleway'; margin-top: 3vh; text-align: center; font-size: 1.3vw;">Call us for quicker response.</h2>
                 </div>
             </div>
@@ -270,11 +269,30 @@
         </div>
     </div>
     
-    <!-- <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-full shadow" style="display: none;">
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-full shadow" style="display: none;">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
         </svg>
       </button>
-    <script src="/scripts/index.js"></script>       -->
+    <script src="/scripts/index.js"></script>
+    <script>
+        // JavaScript for the slideshow
+        const images = [
+            '/assets/main.jpg',
+            '/assets/01.jpg',
+            '/assets/02.jpg',
+        ];
+
+        let currentIndex = 0;
+        const slideshowElement = document.getElementById('slideshow');
+
+        function changeBackgroundImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            slideshowElement.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        // Change image every 5 seconds
+        setInterval(changeBackgroundImage, 3000);
+    </script>
 </body>
 </html>
