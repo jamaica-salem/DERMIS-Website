@@ -11,7 +11,80 @@
 <body>
     <script src="/scripts/nav-bar.js"></script>
     <div id="nav-bar"></div>
-    <h1>REVIEWS</h1>
+    <h1 style="margin-top: 20vh; font-family: 'Libre Baskerville'; font-size: 5vw; color: #A28167; text-align: center;">Reviews</h1>
+    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: center;" class="px-60"> Discover reviews from our valued patients who have experienced exceptional care and transformative results at our dermatology clinic. Hear stories of satisfaction and success, as our dedicated dermatologists strive to provide personalized treatments that enhance both skin health and confidence. Browse through these testimonials to learn more about the positive impact of our services and why our clinic is trusted for comprehensive dermatological care. </p>
 
+    <div id="fifth-section" class="mt-10">
+        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
+            <!-- Left Column -->
+            <div style="display: flex; justify-content:start; align-items: center;">
+                <img src="/assets/review-1.png" alt="Your Image" style="height: 50vh;">
+            </div>
+            <!-- Right Column-->
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
+                <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“My experience exceeded my expectations! The staff were incredibly friendly and welcoming, making me feel comfortable right away...”</h1>
+                <br>
+                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer A</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 60% 40%;">
+            <!-- Left Column -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
+                <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“I reckon going to dermis clinic was a very fun experience, the utilities of the clinic are very well maintained...”</h1>
+                <br>
+                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer B</h2>
+            </div>
+            <!-- Right Column-->
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="/assets/review-2.png" alt="Your Image" style="height: 50vh;">
+            </div>
+        </div>
+        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="/assets/review-3.png" alt="Your Image" style="height: 50vh;">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
+                <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“As a first timer, I enjoyed my time at Dermis and was more than satisfied with their services. The employees there are kind and friendly...”</h1>
+                <br>
+                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer C</h2>
+            </div>
+        </div>
+    </div>
+    <div id="footer-section" class="mt-40"></div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-section').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            });
+
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Add a click event listener to the button
+            scrollToTopBtn.addEventListener("click", () => {
+            // Scroll to the top of the page with smooth behavior
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            });
+
+            // Show or hide the button based on the scroll position
+            window.addEventListener("scroll", () => {
+            // If the scroll position is greater than or equal to 500 pixels, show the button, otherwise hide it
+            if (window.scrollY >= 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+            });
+        </script>
 </body>
 </html>
