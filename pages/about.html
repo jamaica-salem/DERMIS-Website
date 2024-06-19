@@ -11,7 +11,49 @@
 <body>
     <script src="/scripts/nav-bar.js"></script>
     <div id="nav-bar"></div>
-    <h1>ABOUT</h1>
+    <h1 style="margin-top: 20vh; font-family: 'Libre Baskerville'; font-size: 5vw; color: #A28167; text-align: center;">About Us</h1>
+    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: center;" class="px-60">At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.</p>
 
+    <div class="flex items-center justify-center mt-10">
+        <img class="rounded-lg" src="/assets/about.jpg" style="height: 100vh; ">
+    </div>
+    <h1 class="pl-60" style="margin-top: 5vh; font-family: 'Libre Baskerville'; font-size: 2.8vw; color: #A28167; ">Our Mission</h1>
+    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Our experienced professionals stay at the forefront of dermatological science, offering advanced treatments and interventions. But for us, it's more than clinical expertise—it's about a holistic approach to patient well-being. We go beyond, emphasizing, personalized care where each patient receives individualized attention, recognizing and respecting cultural diversity.</p>
+    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p>
+    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5"><p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p></p>
+    
+    <div id="footer-section" class="mt-40"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-section').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Add a click event listener to the button
+        scrollToTopBtn.addEventListener("click", () => {
+        // Scroll to the top of the page with smooth behavior
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        });
+
+        // Show or hide the button based on the scroll position
+        window.addEventListener("scroll", () => {
+        // If the scroll position is greater than or equal to 500 pixels, show the button, otherwise hide it
+        if (window.scrollY >= 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+        });
+    </script>
 </body>
 </html>
