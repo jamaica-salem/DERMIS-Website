@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="Dermatology, Clinic, Skin, Beauty">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/dermis-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,213 +13,552 @@
     <link rel="stylesheet" href="/styles/index.css">
     <title>Dermatology International Subspecialists</title>
     <style>
+
+        /* Navbar Section */
+
+        .menu-link {
+            font-family: 'Raleway';
+        }
+
+        /* Welcome Section */
+
+        #welcome-section {
+            position: relative;
+            height: 100vh;
+        }
+
+        #welcome-section h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-family: 'Libre Baskerville', serif;
+            color: white;
+            font-size: 8.0vw;
+            line-height: 1.2;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #welcome-section p {
+            position: absolute;
+            top: calc(64% + 10vw);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-family: 'Raleway', serif;
+            color: white;
+            font-size: 1.5vw;
+            white-space: nowrap;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #welcome-section .grid {
+            grid-template-rows: 100vh 50vh;
+        }
+
+        #bg-left {
+            background-color: #ccb29b;
+        }
+
+        #slideshow {
+            background-image: url('/assets/main.jpg');
+            display: grid;
+            grid-template-rows: 100vh 50vh;
+        }
+
+
         .bg-image {
             background-size: cover;
             background-position: center;
             transition: background-image 1s ease-in-out;
         }
+
+        /* About Section */
+
+        #about-section {
+            position: relative;
+            height: 100vh;
+            margin-top: 8.3rem;
+            margin-bottom: 2rem;
+        }
+
+        #about-section .grid {
+            grid-template-rows: 100vh 50vh;
+        }
+
+        #about-section h1 {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            margin-left: 10vw; 
+            font-size: 1.3vw;
+            color: #A28167;
+        }
+
+        #about-section h2 {
+            font-family: Raleway;
+            margin-left: 10vw;
+            font-size: 4.0vw;
+        }
+
+        #about-section p {
+            font-family: Raleway;
+            margin-right: 10vw;
+            font-size: 1.2vw;
+        }
+
+        /* Dermatologists and Owner Section */
+
+        #derm-section {
+            position: relative;
+            height: 128vh;
+            margin-top: 8rem;
+            margin-bottom: 5rem;
+        }
+
+        #derm-section h1 {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            text-align: center;
+            font-size: 1.5vw;
+            color: #A28167;
+        }
+
+        #derm-section h2 {
+            font-family: Raleway;
+            font-size: 4.0vw;
+            text-align: center;
+        }
+
+        #derm-content {
+            grid-template-rows: 40vh 40vh;
+        }
+
+        #derm-content h1 {
+            font-family: Raleway;
+            font-size: 1.3vw;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #derm-content h2 {
+            font-family: Raleway;
+            font-size: 1.1vw;
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
+            color: #A28167;
+        }
+
+        #derm-content h3 {
+            font-family: Raleway;
+            font-size: 1.1vw;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 3vh;
+        }
+
+        #derm-content h4 {
+            font-family: Raleway;
+            font-size: 1.1vw;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            width: 100%; 
+            height: 400px; 
+            overflow: hidden;
+        }
+
+        .image-container img {
+            max-width: 100%; 
+            max-height: 100%; 
+        }
+
+        /* Services Section */
+
+        #services-section {
+            position: relative;
+            height: 133vh;
+            margin-top: 8rem;
+            margin-bottom: 6rem;
+        }
+
+        #services-grid {
+            grid-template-rows: 100vh 50vh;
+        }
+
+        #services-heading {
+            width: 85vh;
+        }
+
+        .services-title {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            margin-left: 15vb;
+            font-size: 1.3vw;
+            color: #A28167;
+        }
+
+        .services-subtitle {
+            font-family: Raleway;
+            margin-left: 15vb;
+            font-size: 4.0vw;
+            line-height: 1.0;
+            margin-top: 2vh;
+        }
+
+        #services-content {
+            margin-right: 15vb;
+        }
+
+        .service-item {
+            border: #A28167;
+            border-style: solid;
+            border-width: thin;
+            height: 53vh;
+            width: 40vh;
+        }
+
+        #service-item-margin-top {
+            margin-top: 5vb;
+        }
+
+        .service-item-text {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-item-title {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            text-align: center;
+            font-size: 1.3vw;
+            color: #A28167;
+            margin-top: 2vb;
+        }
+
+        .more-button {
+            font-family: 'Raleway';
+            border: black;
+            border-style: solid;
+            border-width: thin;
+            margin-top: 5vh;
+            height: 6vh;
+            width: 9vw;
+            font-size: 1.0vw;
+            color: black;
+        }
+
+        /* Reviews Section */
+
+        #review-bar {
+            background-color: #A28167;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            z-index: 500;
+        }
+
+        .review-link {
+            text-decoration: none;
+            color: white;
+            font-family: 'Raleway';
+            font-size: 2vw;
+            margin-left: 5vw;
+            padding: 0.5em;
+        }
+
+        .review-grid {
+            grid-template-rows: 75vh;
+            grid-template-columns: 40% 60%;
+        }
+
+        .left-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .review-image {
+            height: 60vh;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .stars-image {
+            height: 6vh;
+            margin-bottom: 2vh;
+        }
+
+        .review-text {
+            font-family: 'Raleway';
+            font-size: 2.5vw;
+            padding-right: 6vw;
+        }
+
+        .customer-name {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            color: #A28167;
+        }
+
+        .review-grid-alt {
+            grid-template-rows: 75vh;
+            grid-template-columns: 60% 40%;
+        }
+
+        .left-column-alt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 10vw;
+        }
+
+        /* Gallery Section */
+
+        #gallery-section h1 {
+            font-family: 'Libre Baskerville';
+            font-style: italic;
+            color: #A28167;
+            text-align: center;
+            margin-top: 6vw;
+        }
+
+        #gallery-section h2 {
+            font-family: 'Raleway';
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        #gallery-section .grid {
+            padding-left: 8vw;
+            padding-right: 8vw;
+            margin-top: 5vw;
+            margin-bottom: 8vw;
+        }
+
+        #gallery-section .grid > div {
+            position: relative;
+            height: 35vh;
+        }
+
+        #gallery-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
     </style>
 </head>
 <body>
-    <script src="/scripts/nav-bar.js"></script>
-    <div id="nav-bar"></div>
-    <div id="first-section" style="position: relative; height: 100vh;">
-        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Libre Baskerville', serif; color: white; font-size: 8.0vw; line-height: 1.2; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);">Dermatology International Subspecialists</h1>
-        <p style="position: absolute; top: calc(64% + 10vw); left: 50%; transform: translate(-50%, -50%); z-index: 1; font-family: 'Raleway', serif; color: white; font-size: 1.5vw; white-space: nowrap; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">MEDICAL DERMATOLOGY | DERMATOPATHOLOGY | LASERS | AESTHETIC CLINIC</p>
-        <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
+    <div id="nav-bar">
+        <nav id="navbar" class="bg-white border-gray-200 dark:bg-gray-900 shadow-navbar">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img src="/assets/dermis-logo.png" class="h-12" alt="DERMIS Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="index.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link" style="color: #A28167;" aria-current="page">HOME</a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">SERVICES</a>
+                  </li>
+                  <li>
+                    <a href="reviews.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">REVIEWS</a>
+                  </li>
+                  <li>
+                    <a href="https://www.messenger.com/t/113856105035325" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">CONTACT US</a>
+                  </li>
+                </ul>
+              </div>          
+            </div>
+          </nav>
+    </div>
+    <div id="welcome-section">
+        <h1>Dermatology International Subspecialists</h1>
+        <p>MEDICAL DERMATOLOGY | DERMATOPATHOLOGY | LASERS | AESTHETIC CLINIC</p>
+        <div class="grid grid-cols-2">
             <!-- Left Column -->
-            <div style="background-color: #ccb29b;">
-            </div>
+            <div id="bg-left"></div>
             <!-- Right Column-->
-            <div id="slideshow" class="bg-image" style="background-image: url('/assets/main.jpg');  display: grid; grid-template-rows: 100vh 50vh;">
-            </div>
+            <div id="slideshow" class="bg-image"></div>
         </div>
     </div>
-    <div id="second-section" style="position: relative; height: 100vh; margin-top: 8.3rem; margin-bottom: 2rem;">
-        <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
+    <div id="about-section">
+        <div class="grid grid-cols-2">
             <!-- Left Column-->
             <div>
-                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #A28167;">About Us</h1>
-                <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw;">Hi, Welcome!</h2>
+                <h1>About Us</h1>
+                <h2>Hi, Welcome!</h2>
             </div>
             <!-- Right Column -->
             <div>
-                <p style="font-family: Raleway; margin-right: 15vb; font-size: 1.2vw;">At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.
-                </p>
-                <br>
-                <p style="font-family: Raleway; margin-right: 15vb; font-size: 1.2vw;">Our experienced professionals stay at the forefront of dermatological science, offering advanced treatments and interventions. But for us, it's more than clinical expertise—it's about a holistic approach to patient well-being. We go beyond, emphasizing, personalized care where each patient receives individualized attention, recognizing and respecting cultural diversity.
-                </p>
-                <br>
-                <p style="font-family: Raleway; margin-right: 15vb; font-size: 1.2vw;">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.
-                </p>
-                <br>
-                <p style="font-family: Raleway; margin-right: 15vb; font-size: 1.2vw;">Beyond patient care, we actively contribute to global dermatological knowledge through research and education initiatives. Collaborating with institutions and professionals worldwide, we participate in the global exchange of ideas, shaping the future of dermatological practices. Our unwavering commitment to international standards makes us a beacon of excellence, transcending borders to provide world-class services for all.</p>
+                <p>At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.</p><br>
+                <p>Our experienced professionals stay at the forefront of dermatological science, offering advanced treatments and interventions. But for us, it's more than clinical expertise—it's about a holistic approach to patient well-being. We go beyond, emphasizing personalized care where each patient receives individualized attention, recognizing and respecting cultural diversity.</p><br>
+                <p>Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p><br>
+                <p>Beyond patient care, we actively contribute to global dermatological knowledge through research and education initiatives. Collaborating with institutions and professionals worldwide, we participate in the global exchange of ideas, shaping the future of dermatological practices. Our unwavering commitment to international standards makes us a beacon of excellence, transcending borders to provide world-class services for all.</p>
             </div>
         </div>
     </div>
     <hr>
-    <div id="third-section"  style="position: relative; height: 128vh; margin-top: 8rem; margin-bottom: 5rem;">
-        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.5vw; color: #A28167;">Meet Our Dermatologists and Owner</h1>
-        <h2 style="font-family: Raleway; font-size: 4.0vw; text-align: center;">We'll take care of your skin!</h2>
-        <div class="grid grid-cols-3 mt-20" style="grid-template-rows: 100vh 50vh;" style="margin-top: 8rem; margin-bottom: 3rem;">
+    <div id="derm-section">
+        <h1>Meet Our Dermatologists and Owner</h1>
+        <h2>We'll take care of your skin!</h2>
+        <div id="derm-content" class="grid grid-cols-3 mt-20">
             <div>   
-                <div class="image-container" >
+                <div class="image-container">
                     <img src="/assets/tayag.png" alt="">
                 </div>
                 <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Joseph John S. Tayag,<br>MD, DPDS</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;">Board-Certified Dermatologist</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Wednesday, Thursday, & Friday</h4>
+                    <h1>Joseph John S. Tayag,<br>MD, DPDS</h1>
+                    <h2 class="mt-5">Board-Certified Dermatologist</h2>
+                    <h3>Clinic Schedule:</h3>
+                    <h4>Wednesday, Thursday, & Friday</h4>
                 </div>
             </div>
             <div>
-                <div class="image-container" >
-                    <img src="/assets/culala.png">
+                <div class="image-container">
+                    <img src="/assets/culala.png" alt="">
                 </div>
                 <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Jose Angelo P. Culala, <br> RPm ,CLC-CBT, AFP, MBA, MSPsy, Psy.D (hon. causa)</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;" >Chief Executive Officer and Owner</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;"></h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;"></h4>
+                    <h1>Jose Angelo P. Culala, <br> RPm ,CLC-CBT, AFP, MBA, MSPsy, Psy.D (hon. causa)</h1>
+                    <h2 class="mt-5">Chief Executive Officer and Owner</h2>
                 </div>
             </div>
-            
             <div>
-                <div class="image-container" >
-                    <img src="/assets/torres-culala.png">
+                <div class="image-container">
+                    <img src="/assets/torres-culala.png" alt="">
                 </div>
                 <div class="mt-10">
-                    <h1 style="font-family: Raleway; font-size: 1.3vw; font-weight: 600; text-align: center;">Kara Melissa Torres-Culala,<br>MD, FPDS, FDSP</h1>
-                    <h2 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 400; text-align: center; font-style: italic; color: #A28167;">Board-Certified Dermatologist and Dermatopathologist</h2>
-                    <h3 class="mt-5" style="font-family: Raleway; font-size: 1.1vw; font-weight: 600; text-align: center;">Clinic Schedule:</h3>
-                    <h4 style="font-family: Raleway; font-size: 1.1vw; font-weight: 500; text-align: center;">Monday, Tuesday & Saturday</h4>
+                    <h1>Kara Melissa Torres-Culala,<br>MD, FPDS, FDSP</h1>
+                    <h2 class="mt-5">Board-Certified Dermatologist and Dermatopathologist</h2>
+                    <h3>Clinic Schedule:</h3>
+                    <h4>Monday, Tuesday & Saturday</h4>
                 </div>
             </div>
-            
         </div>
-    </div>
+    </div>    
     <hr>    
-    <div id="fourth-section" style="position: relative; height: 133vh; margin-top: 8rem; margin-bottom: 6rem;">
-        <div class="grid grid-cols-2" style="grid-template-rows: 100vh 50vh;">
-            <div style="width: 85vh;">
-                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; margin-left: 15vb; font-size: 1.3vw; color: #A28167;">Our Services</h1>
-                <h2 style="font-family: Raleway; margin-left: 15vb; font-size: 4.0vw; line-height: 1.0; margin-top: 2vh;">We offer the best services for your skin!</h2>
+    <div id="services-section">
+        <div class="grid grid-cols-2" id="services-grid">
+            <div id="services-heading">
+                <h1 class="services-title">Our Services</h1>
+                <h2 class="services-subtitle">We offer the best services for your skin!</h2>
             </div>
             <div>
-                <div class="grid grid-cols-2" style="margin-right: 15vb;">
+                <div id="services-content" class="grid grid-cols-2">
                     <div>
-                        <div class="button" style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
+                        <div class="button service-item">
                             <img src="/assets/011.jpg" alt="Your Image">
-                            <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >LIBERTY PEEL</h1>
+                            <div class="service-item-text">
+                                <h1 class="service-item-title">LIBERTY PEEL</h1>
                             </div>
                         </div>
-                        <div class="button" style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
+                        <div class="button service-item" id="service-item-margin-top">
                             <img src="/assets/055.jpg" alt="Your Image">
-                            <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >CHRYSLER PEEL</h1>
+                            <div class="service-item-text">
+                                <h1 class="service-item-title">CHRYSLER PEEL</h1>
                             </div>
                         </div>
-
                     </div>
                     <div>
-                        <div class="button" style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh;">
+                        <div class="button service-item">
                             <img src="/assets/022.jpg" alt="Your Image">
-                            <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >BROOKLYN PEEL</h1>
+                            <div class="service-item-text">
+                                <h1 class="service-item-title">BROOKLYN PEEL</h1>
                             </div>
                         </div>
-                        <div class="button" style="border: #A28167; border-style: solid; border-width: thin; height: 53vh; width: 40vh; margin-top: 5vb;">
+                        <div class="button service-item" id="service-item-margin-top">
                             <img src="/assets/033.jpg" alt="Your Image">
-                            <div style="align-items: center; justify-content: center;">
-                                <h1 style= "font-family: 'Libre Baskerville'; font-style: italic; text-align: center; font-size: 1.3vw; color: #A28167; margin-top: 2vb;" >EMPIRE STATE PEEL</h1>
+                            <div class="service-item-text">
+                                <h1 class="service-item-title">EMPIRE STATE PEEL</h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="services.html">
-                    <button style="font-family: 'Raleway'; border: black; border-style: solid; border-width: thin; margin-top: 5vh; height: 6vh; width: 9vw; font-size: 1.0vw; color: black">More -></button>
+                    <button class="more-button">More -></button>
                 </a>
             </div>
         </div>
     </div>
-    <div style="background-color: #A28167;   height: 12vh; display: flex; align-items: center; z-index: 500;">
-        <a href="reviews.html" style="text-decoration: none; color: white; font-family: 'Raleway'; font-size: 2vw; margin-left: 5vw; padding: 0.5em;">Read our patient reviews -></a>
-    </div>
     
-    <div id="fifth-section">
-        <div class="grid grid-cols-2" style="grid-template-rows: 75vh; grid-template-columns: 40% 60%;">
+    <div id="review-bar">
+        <a href="reviews.html" class="review-link">Read our patient reviews -></a>
+    </div>    
+    
+    <div id="review-section">
+        <div class="grid grid-cols-2 review-grid">
             <!-- Left Column -->
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <img src="/assets/review-1.png" alt="Your Image" style="height: 60vh;">
+            <div class="left-column">
+                <img src="/assets/review-1.png" alt="Your Image" class="review-image">
             </div>
-            <!-- Right Column-->
-            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
-                <img src="/assets/stars.png" alt="Your Image" style="height: 6vh; margin-bottom: 2vh;">
-                <h1 style="font-family: 'Raleway'; font-size: 2.5vw; padding-right: 6vw;">“My experience exceeded my expectations! The staff were incredibly friendly and welcoming, making me feel comfortable right away...”</h1>
+            <!-- Right Column -->
+            <div class="right-column">
+                <img src="/assets/stars.png" alt="Your Image" class="stars-image">
+                <h1 class="review-text">“My experience exceeded my expectations! The staff were incredibly friendly and welcoming, making me feel comfortable right away...”</h1>
                 <br>
-                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer A</h2>
+                <h2 class="customer-name">- Customer A</h2>
             </div>
         </div>
         <hr>
-        <div class="grid grid-cols-2" style="grid-template-rows: 75vh; grid-template-columns: 60% 40%;">
+        <div class="grid grid-cols-2 review-grid-alt">
             <!-- Left Column -->
-            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin-left: 10vw;">
-                <img src="/assets/stars.png" alt="Your Image" style="height: 6vh; margin-bottom: 2vh;">
-                <h1 style="font-family: 'Raleway'; font-size: 2.5vw;">“I reckon going to dermis clinic was a very fun experience, the utilities of the clinic are very well maintained...”</h1>
+            <div class="left-column-alt">
+                <img src="/assets/stars.png" alt="Your Image" class="stars-image">
+                <h1 class="review-text">“I reckon going to dermis clinic was a very fun experience, the utilities of the clinic are very well maintained...”</h1>
                 <br>
-                <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer B</h2>
+                <h2 class="customer-name">- Customer B</h2>
             </div>
-            <!-- Right Column-->
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <img src="/assets/review-2.png" alt="Your Image" style="height: 60vh;">
+            <!-- Right Column -->
+            <div class="right-column">
+                <img src="/assets/review-2.png" alt="Your Image" class="review-image">
             </div>
         </div>
-        
     </div>
+    
     <hr>
     <div id="gallery-section">
-        <h1 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167; text-align: center; margin-top: 6vw;   ">Our Gallery</h1>
-        <h2 style="font-family: 'Raleway'; font-size: 2.5vw; text-align: center; ">See the beauty of our clinic.</h2>
+        <h1>Our Gallery</h1>
+        <h2>See the beauty of our clinic.</h2>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4" style="padding-left: 8vw; padding-right: 8vw; margin-top: 5vw; margin-bottom: 8vw;">
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/10.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/11.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/16.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/14.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/19.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/20.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/13.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/17.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div style="position: relative; height: 35vh;">
-                <img src="/assets/12.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div><img src="/assets/9.jpg" alt=""></div>
+            <div><img src="/assets/1.jpg" alt=""></div>
+            <div><img src="/assets/10.jpg" alt=""></div>
+            <div><img src="/assets/11.jpg" alt=""></div>
+            <div><img src="/assets/16.jpg" alt=""></div>
+            <div><img src="/assets/14.jpg" alt=""></div>
+            <div><img src="/assets/19.jpg" alt=""></div>
+            <div><img src="/assets/8.jpg" alt=""></div>
+            <div><img src="/assets/20.jpg" alt=""></div>
+            <div><img src="/assets/13.jpg" alt=""></div>
+            <div><img src="/assets/17.jpg" alt=""></div>
+            <div><img src="/assets/12.jpg" alt=""></div>
         </div>
     </div>
     
@@ -228,7 +568,7 @@
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
         </svg>
-      </button>
+    </button>
 
     <script src="/scripts/index.js"></script>
     <script>

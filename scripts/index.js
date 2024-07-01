@@ -1,3 +1,5 @@
+
+
 // Get the button element
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -20,34 +22,25 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Fetch and insert navbar
-    fetch("nav-bar.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("nav-bar").innerHTML = data;
+// Sticky nav-bar
 
-            // Inject CSS to make the navbar sticky
-            const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
             navbar.style.position = "fixed";
             navbar.style.top = "0";
             navbar.style.left = "0";
             navbar.style.right = "0";
-            navbar.style.zIndex = "1000"; // Ensure it's above other content
+            navbar.style.zIndex = "1000"; 
 
-            // Add scroll event listener to change navbar background color
             window.addEventListener("scroll", () => {
                 const scrolled = window.scrollY;
                 if (scrolled > 0) {
-                    navbar.classList.add("bg-white-500"); // Change background color to gray-500 (you can replace it with your desired color)
+                    navbar.classList.add("bg-white-500"); 
                 } else {
-                    navbar.classList.remove("bg-white-500"); // Remove background color if scrolled to top
+                    navbar.classList.remove("bg-white-500");
                 }
             });
-        });
-});
 
-
+// Fetch footer
 document.addEventListener('DOMContentLoaded', function() {
   fetch('footer.html')
       .then(response => response.text())
