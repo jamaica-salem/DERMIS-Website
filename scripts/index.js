@@ -1,5 +1,3 @@
-
-
 // Get the button element
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 

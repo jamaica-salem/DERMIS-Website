@@ -7,7 +7,25 @@
     <link rel="icon" type="image/x-icon" href="/assets/dermis-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Reviews</title>
+    <style>
+    
+        #heading h1 {
+            margin-top: 20vh;
+            font-family: 'Libre Baskerville';
+            font-size: 5vw;
+            color: #A28167;
+            text-align: center;
+        }
+
+        #heading p {
+            font-family: 'Raleway';
+            font-size: 2.5vh;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <div id="nav-bar">
@@ -26,60 +44,62 @@
               <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                    <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway';" aria-current="page">HOME</a>
+                    <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"" aria-current="page">HOME</a>
                   </li>
                   <li>
-                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'">ABOUT</a>
+                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">ABOUT</a>
                   </li>
                   <li>
-                    <a href="services.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway';">SERVICES</a>
+                    <a href="services.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">SERVICES</a>
                   </li>
                   <li>
-                    <a href="reviews.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'; color: #A28167;">REVIEWS</a>
+                    <a href="reviews.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link" style="color: #A28167;">REVIEWS</a>
                   </li>
                   <li>
-                    <a href="https://www.messenger.com/t/113856105035325" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'">CONTACT US</a>
+                    <a href="https://www.messenger.com/t/113856105035325" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">CONTACT US</a>
                   </li>
                 </ul>
               </div>          
             </div>
           </nav>
     </div>
-    <h1 style="margin-top: 20vh; font-family: 'Libre Baskerville'; font-size: 5vw; color: #A28167; text-align: center;">Reviews</h1>
-    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: center;" class="px-60"> Discover reviews from our valued patients who have experienced exceptional care and transformative results at our dermatology clinic. Hear stories of satisfaction and success, as our dedicated dermatologists strive to provide personalized treatments that enhance both skin health and confidence. Browse through these testimonials to learn more about the positive impact of our services and why our clinic is trusted for comprehensive dermatological care. </p>
+    <div id="heading">
+        <h1>Reviews</h1>
+        <p class="px-60"> Discover reviews from our valued patients who have experienced exceptional care and transformative results at our dermatology clinic. Hear stories of satisfaction and success, as our dedicated dermatologists strive to provide personalized treatments that enhance both skin health and confidence. Browse through these testimonials to learn more about the positive impact of our services and why our clinic is trusted for comprehensive dermatological care. </p>
+    </div>
 
-    <div id="fifth-section" class="mt-10">
-        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
+    <div id="review-content" class="mt-10">
+        <div id="grid-one" class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
             <!-- Left Column -->
-            <div style="display: flex; justify-content:start; align-items: center;">
+            <div id="image-left" style="display: flex; justify-content: start; align-items: center;">
                 <img src="/assets/review-1.png" alt="Your Image" style="height: 50vh;">
             </div>
             <!-- Right Column-->
-            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+            <div id="first-content" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                 <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“My experience exceeded my expectations! The staff were incredibly friendly and welcoming, making me feel comfortable right away...”</h1>
                 <br>
                 <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer A</h2>
             </div>
         </div>
-        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 60% 40%;">
+        <div id="grid-two" class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 60% 40%;">
             <!-- Left Column -->
-            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+            <div id="second-content" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                 <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“I reckon going to dermis clinic was a very fun experience, the utilities of the clinic are very well maintained...”</h1>
                 <br>
                 <h2 style="font-family: 'Libre Baskerville'; font-style: italic; color: #A28167;">- Customer B</h2>
             </div>
             <!-- Right Column-->
-            <div style="display: flex; justify-content: center; align-items: center;">
+            <div id="image-right" style="display: flex; justify-content: center; align-items: center;">
                 <img src="/assets/review-2.png" alt="Your Image" style="height: 50vh;">
             </div>
         </div>
-        <div class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
-            <div style="display: flex; justify-content: center; align-items: center;">
+        <div id="grid-one" class="grid grid-cols-2 px-60" style="grid-template-rows: 65vh; grid-template-columns: 40% 60%;">
+            <div id="image-left-second" style="display: flex; justify-content: center; align-items: center;">
                 <img src="/assets/review-3.png" alt="Your Image" style="height: 50vh;">
             </div>
-            <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+            <div id="third-content" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                 <img src="/assets/stars.png" alt="Your Image" style="height: 4vh; margin-bottom: 2vh;">
                 <h1 style="font-family: 'Raleway'; font-size: 2.0vw;">“As a first timer, I enjoyed my time at Dermis and was more than satisfied with their services. The employees there are kind and friendly...”</h1>
                 <br>

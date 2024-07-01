@@ -7,7 +7,37 @@
     <link rel="icon" type="image/x-icon" href="/assets/dermis-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>About</title>
+    <style>
+        #content p {
+            font-family: 'Raleway';
+            font-size: 2.5vh;
+            text-align: left;
+        }
+
+        #about-heading {
+            margin-top: 20vh;
+            font-family: 'Libre Baskerville';
+            font-size: 5vw;
+            color: #A28167;
+            text-align: center;
+        }
+
+        #about-text {
+            font-family: 'Raleway';
+            font-size: 2.5vh;
+            text-align: center;
+        }
+
+        #about-image {
+            margin-top: 10vh;
+        }
+
+        #about-content {
+            margin-top: 20vh;
+        }
+    </style>
 </head>
 <body>
     <div id="nav-bar">
@@ -26,38 +56,36 @@
               <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                    <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway';" aria-current="page">HOME</a>
+                    <a href="index.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"" aria-current="page">HOME</a>
                   </li>
                   <li>
-                    <a href="about.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'; color: #A28167;">ABOUT</a>
+                    <a href="about.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link" style="color: #A28167;">ABOUT</a>
                   </li>
                   <li>
-                    <a href="services.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'">SERVICES</a>
+                    <a href="services.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">SERVICES</a>
                   </li>
                   <li>
-                    <a href="reviews.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'">REVIEWS</a>
+                    <a href="reviews.html" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">REVIEWS</a>
                   </li>
                   <li>
-                    <a href="https://www.messenger.com/t/113856105035325" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus" style="font-family: 'Raleway'">CONTACT US</a>
+                    <a href="https://www.messenger.com/t/113856105035325" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:p-0 dark:text-white custom-hover-focus menu-link"">CONTACT US</a>
                   </li>
                 </ul>
               </div>          
             </div>
           </nav>
     </div>
-    <h1 style="margin-top: 20vh; font-family: 'Libre Baskerville'; font-size: 5vw; color: #A28167; text-align: center;">About Us</h1>
-    <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: center;" class="px-60">At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.</p>
 
-    <div class="flex items-center justify-center mt-10">
-        <img class="rounded-lg" src="/assets/about.jpg" style="height: 100vh; ">
+    <h1 id="about-heading">About Us</h1>
+    <p id="about-text" class="px-60">At Dermatology International Subspecialists, Inc., we lead the way in dermatological care, embodying a dedication to global excellence. Our specialized team is committed to delivering top-notch services that meet international standards, ensuring our patients receive the highest quality of care.</p>
+    <div class="flex items-center justify-center mt-10" id="about-image">
+        <img class="rounded-lg" src="/assets/about.jpg" style="height: 100vh;">
     </div>
-    <div class="mt-20">
-        <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Our experienced professionals stay at the forefront of dermatological science, offering advanced treatments and interventions. But for us, it's more than clinical expertise—it's about a holistic approach to patient well-being. We go beyond, emphasizing, personalized care where each patient receives individualized attention, recognizing and respecting cultural diversity.</p>
-        <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p>
-        <p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5"><p style="font-family: 'Raleway'; font-size: 2.5vh; text-align: left;" class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p>
+    <div id="content" class="mt-20">
+        <p class="px-60 mt-5">Our experienced professionals stay at the forefront of dermatological science, offering advanced treatments and interventions. But for us, it's more than clinical expertise—it's about a holistic approach to patient well-being. We go beyond, emphasizing personalized care where each patient receives individualized attention, recognizing and respecting cultural diversity.</p>
+        <p class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p>
+        <p class="px-60 mt-5">Dermatology International Subspecialists, Inc. isn't just a medical provider; we symbolize quality in dermatological care. Our inclusive environment values the unique needs of patients from various backgrounds, integrating global best practices with a patient-centered philosophy.</p>
     </div>
-    
-    
     <div id="footer-section" class="mt-40"></div>
     <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-full shadow" style="display: none;">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
